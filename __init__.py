@@ -7,7 +7,7 @@ class Response(object):
         self.response_body['version'] = version
         self.response_body['session_attributes'] = []
         self.response_body['response'] = {}
-        self.response_body['shouldEndSession'] = should_end
+        self.response_body['response']['shouldEndSession'] = should_end
 
     def _build_output_speech(self, speech_type=None, speech_text=None):
         output_speech = {}
