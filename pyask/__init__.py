@@ -5,7 +5,7 @@ class Response(object):
     def __init__(self, version="1.0", should_end=True):
         self.response_body = {}
         self.response_body['version'] = version
-        self.response_body['session_attributes'] = []
+        self.response_body['sessionAttributes'] = []
         self.response_body['response'] = {}
         self.response_body['response']['shouldEndSession'] = should_end
 
@@ -52,10 +52,3 @@ class Response(object):
         self.response_body['response']['reprompt'] = {
             'outputSpeech': output_speech
         }
-
-# r = Response()
-# r.set_output_speech(speech_type="SSML", speech_text="Hello There")
-# r.set_card(card_type="Simple")
-# r.set_reprompt(speech_type="SSML", speech_text="Want to do this again")
-
-# print r.response_body
