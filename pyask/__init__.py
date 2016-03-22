@@ -5,7 +5,7 @@ class Response(object):
     def __init__(self, version="1.0", should_end=True):
         self.response_body = {}
         self.response_body['version'] = version
-        self.response_body['sessionAttributes'] = []
+        self.response_body['sessionAttributes'] = {}
         self.response_body['response'] = {}
         self.response_body['response']['shouldEndSession'] = should_end
 
