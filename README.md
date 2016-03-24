@@ -1,6 +1,6 @@
 ## pyASK (Python Alexa Skills Kit)
 
-Library to help build Alexa Skills Kits in Lambda.
+Easily build responses for the Alexa Skills Kit Interface
 
 ```python
 r = Response(should_end=False)
