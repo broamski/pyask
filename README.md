@@ -1,6 +1,6 @@
 ## pyASK (Python Alexa Skills Kit)
 
-Easily build responses for the Alexa Skills Kit Interface
+Easily build responses for the Alexa Skills Kit (ASK) Interface
 
 ```python
 r = Response(should_end=False)
