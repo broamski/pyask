@@ -52,3 +52,9 @@ class Response(object):
         self.response_body['response']['reprompt'] = {
             'outputSpeech': output_speech
         }
+
+    def set_session_attirbutes(self, data):
+        if type(data) is dict:
+            self.response['sessionAttributes'] = data
+        else:
+            sys.exit("Attribute data must be of type dict")
